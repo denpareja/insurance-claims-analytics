@@ -112,28 +112,28 @@ Run the following command from the project root directory:
 
 ```bash
 pip install -r requirements.txt
-Tech Stack
-Python
 
-Pandas
+## Tech Stack
 
-NumPy
+- Python  
+- Pandas  
+- NumPy  
+- Scikit-learn  
+- Joblib  
 
-Scikit-learn
+---
 
-Joblib
+## Conclusions
 
-Conclusions
-A Random Forest regression model was successfully implemented to predict insurance medical charges.
+- A Random Forest regression model was successfully implemented to predict insurance medical charges.  
+- The model achieved an **R² score of 0.863**, indicating strong predictive capability.  
+- Smoking status, BMI, and age were identified as the most important predictors of medical costs.  
+- The project provides an automated, modular, and reproducible machine learning pipeline for insurance cost estimation.  
+- The results demonstrate how machine learning can support data-driven decision-making in the healthcare and insurance domains.  
 
-The model achieved an R² score of 0.863, indicating strong predictive capability.
+---
 
-Smoking status, BMI, and age were identified as the most important predictors of medical costs.
+## Author
 
-The project provides an automated, modular, and reproducible machine learning pipeline for insurance cost estimation.
-
-The results demonstrate how machine learning can support data-driven decision-making in the healthcare and insurance domains.
-
-Author
-Denisse Pareja
+**Denisse Pareja**  
 Data Scientist – TripleTen
