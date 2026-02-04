@@ -6,27 +6,21 @@ Machine Learning project to predict medical insurance charges based on demograph
 
 ## Objective
 
-The objective of this project is to develop a predictive model capable of estimating insurance medical costs using key variables such as:
-
-- age  
-- BMI  
-- smoking status  
-- region  
-- number of children  
+The objective of this project is to develop a predictive model capable of estimating insurance medical costs using key variables such as age, BMI, smoking status, region, and number of children.
 
 ---
 
 ## Dataset
 
-The dataset used in this project is **insurance.csv**, which contains the following variables:
+The dataset used in this project is `insurance.csv`, which contains the following variables:
 
-- **age** – age of the primary beneficiary  
-- **sex** – gender (male/female)  
-- **bmi** – body mass index  
-- **children** – number of dependents  
-- **smoker** – smoking status  
-- **region** – residential area  
-- **charges** – medical insurance cost (target variable)
+- age – age of the primary beneficiary  
+- sex – gender (male/female)  
+- bmi – body mass index  
+- children – number of dependents  
+- smoker – smoking status  
+- region – residential area  
+- charges – medical insurance cost (target variable)
 
 ---
 
@@ -112,6 +106,28 @@ Run the following command from the project root directory:
 
 ```bash
 pip install -r requirements.txt
+```
+
+### 2) Train the model
+
+```bash
+python src/train_model.py
+```
+
+This will generate the following outputs:
+
+- outputs/model.joblib  
+- outputs/metrics.json  
+- outputs/predictions_sample.csv  
+- outputs/feature_importance.csv  
+
+### 3) Make predictions
+
+```bash
+python src/predict.py
+```
+
+---
 
 ## Tech Stack
 
@@ -129,7 +145,7 @@ pip install -r requirements.txt
 - The model achieved an **R² score of 0.863**, indicating strong predictive capability.  
 - Smoking status, BMI, and age were identified as the most important predictors of medical costs.  
 - The project provides an automated, modular, and reproducible machine learning pipeline for insurance cost estimation.  
-- The results demonstrate how machine learning can support data-driven decision-making in the healthcare and insurance domains.  
+- The results demonstrate how machine learning can support data-driven decision-making in the healthcare and insurance domains.
 
 ---
 
