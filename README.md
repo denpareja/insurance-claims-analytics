@@ -1,114 +1,100 @@
-# Claims Analytics and Cost Prediction
+# Claims Analytics and Cost Prediction (Insurance)
 
-Machine learning project to predict medical insurance costs using demographic and health-related variables.
+Machine Learning project to predict medical insurance charges based on demographic and behavioral data.
 
 ---
 
 ## Objective
 
-Build a regression model capable of estimating insurance charges based on client characteristics such as:
-
-- Age  
-- BMI  
-- Smoking status  
-- Number of children  
-- Region  
-- Sex  
-
-The goal is to support insurance companies in:
-
-- Pricing policies more accurately  
-- Detecting high-risk profiles  
-- Improving financial planning  
+The objective of this project is to develop a predictive model capable of estimating insurance medical costs using key variables such as age, BMI, smoking status, region, and number of children.
 
 ---
 
 ## Dataset
 
-The project uses the classic insurance dataset containing:
+The dataset used in this project is `insurance.csv`, which contains the following variables:
 
-- 1,338 records  
-- 7 features  
-- 1 target variable: `charges`  
-
-Data is split into:
-
-- Train: 1070 samples  
-- Test: 268 samples  
-
----
-
-## Approach
-
-1. Data loading and preprocessing  
-2. Categorical encoding with OneHotEncoder  
-3. Numeric scaling  
-4. Pipeline-based modeling  
-5. Random Forest Regressor  
-6. Model evaluation  
-7. Feature importance analysis  
-8. Prediction generation  
+- **age** – age of the primary beneficiary  
+- **sex** – gender (male/female)  
+- **bmi** – body mass index  
+- **children** – number of dependents  
+- **smoker** – smoking status  
+- **region** – residential area  
+- **charges** – medical insurance cost (target variable)
 
 ---
 
-## Tech Stack
+## Methodology
 
-- Python  
-- Pandas  
-- NumPy  
-- Scikit-learn  
-- Joblib  
+The project follows a structured machine learning workflow:
+
+1. Data loading and exploratory analysis  
+2. Preprocessing of numerical and categorical variables  
+3. Splitting data into training and testing sets  
+4. Building a regression pipeline using Random Forest  
+5. Evaluating model performance  
+6. Generating predictions and analyzing feature importance  
 
 ---
 
-## Results
+## Model Performance
 
-### Model Performance
+The final model achieved the following evaluation metrics:
 
 | Metric | Value |
 |------|------|
 | RMSE | 4603.87 |
-| MAE | 2525.65 |
-| R² Score | 0.863 |
-| Train Samples | 1070 |
-| Test Samples | 268 |
+| MAE  | 2525.65 |
+| R²   | 0.863 |
+| Training samples | 1070 |
+| Test samples | 268 |
 
-**Interpretation**
-
-- The model explains **86.3% of the variance** in insurance costs.  
-- On average, predictions deviate around **$2,525 USD** from real charges.  
-- Performance is strong for a baseline structured ML approach.
+These results demonstrate strong predictive performance and confirm the model’s reliability for estimating insurance costs.
 
 ---
 
 ## Feature Importance
 
-Top factors influencing predicted insurance cost:
+Analysis of feature importance revealed the following key drivers of medical charges:
 
 | Feature | Importance |
 |--------|-----------|
 | smoker (no) | 0.425 |
-| BMI | 0.210 |
-| smoker (yes) | 0.185 |
+| bmi | 0.210 |
+| smoker (yes) | 0.184 |
 | age | 0.134 |
 | children | 0.019 |
-| region | < 0.01 |
-| sex | < 0.01 |
 
-**Key Insight:**  
-Smoking status and BMI are by far the strongest drivers of insurance charges.
+Smoking status and BMI are clearly the most influential factors in determining insurance costs.
 
 ---
 
-## Outputs Generated
+## Project Structure
 
-After training, the system automatically creates:
-
-- `outputs/model.joblib` – trained model  
-- `outputs/metrics.json` – evaluation metrics  
-- `outputs/predictions_sample.csv` – batch predictions  
-- `outputs/prediction_one_example.csv` – single prediction example  
-- `outputs/feature_importance.csv` – importance analysis  
+insurance-claims-analytics/
+│
+├── data/
+│ └── insurance.csv
+│
+├── src/
+│ ├── train_model.py
+│ ├── evaluate.py
+│ ├── predict.py
+│ ├── utils.py
+│ └── config.py
+│
+├── outputs/
+│ ├── metrics.json
+│ ├── feature_importance.csv
+│ ├── predictions_sample.csv
+│ ├── prediction_one_example.csv
+│ └── model.joblib
+│
+├── notebooks/
+│ └── claims_eda.ipynb
+│
+├── requirements.txt
+└── README.md
 
 ---
 
@@ -118,3 +104,29 @@ After training, the system automatically creates:
 
 ```bash
 pip install -r requirements.txt
+
+ech Stack
+
+Python
+
+Pandas
+
+NumPy
+
+Scikit-learn
+
+Joblib
+
+### Conclusions
+
+A Random Forest regression model was successfully implemented to predict insurance charges.
+
+The model achieved an R² score of 0.863, indicating strong predictive power.
+
+Smoking status, BMI, and age were identified as the most important predictors.
+
+The project delivers an automated, modular, and reproducible pipeline for insurance cost estimation.
+
+### Author
+Denisse Pareja
+Data Science Student – TripleTen
