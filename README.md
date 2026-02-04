@@ -108,26 +108,25 @@ insurance-claims-analytics/
 
 ### 1) Install dependencies
 
-Run the following command from the root directory:
+Run the following command from the project root directory:
 
 ```bash
 pip install -r requirements.txt
+Tech Stack
+Python
 
-## Tech Stack
+Pandas
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Joblib
+NumPy
 
----
+Scikit-learn
 
-## Conclusions
+Joblib
 
+Conclusions
 A Random Forest regression model was successfully implemented to predict insurance medical charges.
 
-The model achieved an **R² score of 0.863**, indicating strong predictive capability.
+The model achieved an R² score of 0.863, indicating strong predictive capability.
 
 Smoking status, BMI, and age were identified as the most important predictors of medical costs.
 
@@ -135,9 +134,6 @@ The project provides an automated, modular, and reproducible machine learning pi
 
 The results demonstrate how machine learning can support data-driven decision-making in the healthcare and insurance domains.
 
----
-
-## Author
-
-**Denisse Pareja**  
+Author
+Denisse Pareja
 Data Scientist – TripleTen
