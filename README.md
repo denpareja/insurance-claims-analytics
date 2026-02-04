@@ -129,4 +129,4 @@ The project delivers an automated, modular, and reproducible pipeline for insura
 
 ### Author
 Denisse Pareja
-Data Science Student – TripleTen
+Data Scientist – TripleTen
