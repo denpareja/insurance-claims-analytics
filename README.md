@@ -1,4 +1,79 @@
-# Claims Analytics and Cost Prediction (Insurance)
+# Healthcare Claims Analytics & Cost Prediction Framework
+
+## Executive Summary
+
+This project analyzes healthcare insurance claims data to identify key cost drivers and build a predictive framework that supports risk segmentation, financial forecasting, and preventive strategy design.
+
+The goal is not only to predict costs, but to translate analytical findings into strategic decision-making insights.
+
+---
+
+## Business Problem
+
+Healthcare insurers and provider organizations must understand which variables most strongly influence claim costs in order to:
+
+Improve financial planning
+
+Reduce unexpected cost variability
+
+Design targeted preventive interventions
+
+Allocate resources efficiently
+
+Without structured analytics, cost management becomes reactive rather than strategic.
+
+---
+
+## Key Insights
+
+Smoking status is one of the strongest cost predictors
+
+Higher BMI significantly increases medical expense variability
+
+Age contributes to compounding cost risk
+
+Risk factors intensify when combined
+
+---
+
+## Strategic Recommendations
+
+Segment insured populations by risk exposure
+
+Prioritize preventive programs for high-risk groups
+
+Implement early cost monitoring for compounding risk profiles
+
+Use predictive modeling to inform premium strategy and budgeting
+
+---
+
+## Business Impact
+
+This analytical framework enables organizations to:
+
+Improve cost prediction accuracy
+
+Identify high-risk populations earlier
+
+Support data-driven financial planning
+
+Strengthen risk management strategy
+
+---
+
+## Stakeholder Value
+
+This project demonstrates how different organizational stakeholders can leverage predictive analytics:
+
+- Finance teams → forecast costs and reduce financial uncertainty  
+- Clinical teams → identify high-risk populations early  
+- Strategy teams → design prevention-focused initiatives  
+- Executives → make data-informed policy and pricing decisions  
+
+---
+
+## Project Description
 
 Machine Learning project to predict medical insurance charges based on demographic and behavioral data.
 
@@ -53,6 +128,14 @@ These results demonstrate strong predictive performance and confirm the model’
 
 ---
 
+## Interpretation of Results
+
+The model demonstrates strong predictive performance, indicating that healthcare cost variability can be reliably estimated using a combination of demographic and behavioral variables.
+
+The results suggest that cost prediction in healthcare is not random, but largely driven by identifiable risk factors that organizations can monitor and manage proactively.
+
+---
+
 ## Feature Importance
 
 Analysis of feature importance revealed the following key drivers of medical charges:
@@ -66,6 +149,14 @@ Analysis of feature importance revealed the following key drivers of medical cha
 | children | 0.019 |
 
 Smoking status and BMI are clearly the most influential factors in determining insurance costs.
+
+---
+
+## Analytical Interpretation
+
+Feature importance analysis confirms that behavioral and physiological variables play a significantly larger role in cost prediction than demographic variables alone.
+
+This suggests that risk management strategies should focus on modifiable health factors rather than static characteristics.
 
 ---
 
@@ -139,6 +230,16 @@ python src/predict.py
 
 ---
 
+## Limitations & Assumptions
+
+This model is based on a structured dataset with limited behavioral variables and does not incorporate clinical history, geographic socioeconomic factors, or longitudinal health data.
+
+Therefore, predictions should be interpreted as directional estimates rather than absolute forecasts.
+
+Future iterations could improve performance by incorporating real-world healthcare datasets with longitudinal patient information.
+
+---
+
 ## Conclusions
 
 - A Random Forest regression model was successfully implemented to predict insurance medical charges.  
@@ -149,7 +250,39 @@ python src/predict.py
 
 ---
 
-## Author
+## Strategic Conclusions
 
+This project demonstrates how predictive analytics can be used not only to estimate healthcare costs but also to support strategic decision-making.
+
+The findings highlight that healthcare expenses are strongly influenced by identifiable risk factors such as smoking status, BMI, and age, which means organizations can move from reactive cost management to proactive risk monitoring.
+
+By implementing structured analytics frameworks like this one, insurers and healthcare organizations can improve financial planning, optimize resource allocation, and strengthen preventive strategies.
+
+---
+
+## Executive Takeaway
+
+Predictive healthcare cost modeling is most valuable when used as a decision-support system rather than a forecasting tool alone.
+
+---
+
+## Consulting Relevance
+
+This framework can be adapted for insurers, healthcare providers, and health-tech organizations seeking structured analytics systems for risk evaluation, financial planning, and strategic decision-making.
+
+---
+
+## Author
 **Denisse Pareja**  
-Data Scientist – TripleTen
+Healthcare Analytics Consultant | Data Scientist  
+
+Specialized in building decision-driven analytics systems that translate data into strategic insight for healthcare and operational organizations.
+
+LinkedIn: https://linkedin.com/in/TUURL  
+GitHub: https://github.com/denpareja
+
+---
+
+## Portfolio Note
+
+This project is part of a professional analytics portfolio focused on developing decision-intelligence frameworks that help organizations move from descriptive reporting to predictive and strategic analytics.
