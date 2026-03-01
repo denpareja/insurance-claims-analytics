@@ -1,4 +1,5 @@
 # Healthcare Claims Analytics & Cost Prediction Framework
+Includes visual analytics dashboards and executive-level insights.
 
 ## Executive Summary
 
@@ -33,6 +34,29 @@ Higher BMI significantly increases medical expense variability
 Age contributes to compounding cost risk
 
 Risk factors intensify when combined
+
+---
+
+## Visual Insights
+
+### Distribution of Medical Charges
+![Charges Distribution](assets/figures/charges_distribution.png)
+
+This distribution shows the variability in healthcare costs and highlights the presence of high-cost outliers that drive financial risk.
+
+---
+
+### Charges by Smoking Status
+![Charges by Smoker](assets/figures/charges_by_smoker.png)
+
+Smoking status demonstrates a clear cost stratification pattern, confirming its role as a major driver of insurance expenses.
+
+---
+
+### BMI vs Charges Relationship
+![BMI vs Charges](assets/figures/bmi_vs_charges.png)
+
+BMI shows a positive relationship with medical costs, suggesting preventive interventions targeting obesity could significantly reduce financial burden.
 
 ---
 
